@@ -32,8 +32,7 @@ export default {
             "백엔드 담당",
             "SpringBoot, JPA, Postgresql",
           ],
-          //TODO 바꾸기.
-          redirectUrl: "https://github.com/Taewan-Gu",
+          redirectUrl: "https://apps.apple.com/us/app/%EC%9D%B8%EC%9E%87-init/id1620744100",
         },
         {
           projectTitle: "어개인(Agaein)",
