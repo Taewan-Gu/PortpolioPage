@@ -3,6 +3,7 @@
     <Profile />
     <Resume />
     <AboutMe />
+    <Network />
     <Experience />
     <Projects />
   </div>
@@ -12,6 +13,7 @@
 import Profile from "@/components/portpolio/Profile.vue";
 import Resume from "@/components/portpolio/Resume.vue";
 import AboutMe from "@/components/portpolio/AboutMe.vue";
+import Network from "@/components/portpolio/Network.vue";
 import Experience from "@/components/portpolio/Experience.vue";
 import Projects from "@/components/portpolio/Projects.vue";
 
@@ -21,6 +23,7 @@ export default {
     Profile,
     Resume,
     AboutMe,
+    Network,
     Experience,
     Projects,
   },
@@ -33,7 +36,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  padding: 100px 50px 100px 50px;
+  padding: 100px 50px 50px 50px;
   width: 900px;
   border: #222222 1px solid;
   border-radius: 20px;

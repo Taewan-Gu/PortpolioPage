@@ -1,0 +1,32 @@
+name: Page CI/CD
+
+on:
+  push:
+    branches: [main]
+env:
+  PORT: 3006
+  IMAGE: server
+  CONTAINER: server
+  OWNER_OR_ORGANIZATION: Taewan-Gu
+  REPOSITORY: PortpolioPage
+  USER: fksk94
+  BRANCH: main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: [self-hosted, PortpolioPage]
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v2
+      - name: Pull source code
+        run: |
+          cd /home/suser/${{ env.REPOSITORY }}
+          git pull https://${{ env.USER }}:${{ secrets.USER_TOKEN }}@github.com/${{ env.OWNER_OR_ORGANIZATION }}/${{ env.REPOSITORY }}.git ${{ env.BRANCH }}
+      - name: build Web
+        env:
+          CI: ""
+        run: |
+          cd /home/suser/${{ env.REPOSITORY }}/front
+          yarn install
+          yarn build

@@ -1,7 +1,7 @@
 <template>
   <v-row class="row-content-center">
     <v-col cols="3"></v-col>
-    <v-col cols="6" class="resume">Resume</v-col>
+    <v-col cols="6" class="resume" @click="downloadResume">Resume</v-col>
     <v-col cols="3"></v-col>
   </v-row>
 </template>
@@ -9,6 +9,11 @@
 <script>
 export default {
   name: "Resume",
+  methods: {
+    downloadResume() {
+      alert("🛠 작성 중 🛠");
+    },
+  },
 };
 </script>
 
