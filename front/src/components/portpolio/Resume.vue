@@ -7,11 +7,13 @@
 </template>
 
 <script>
+import { downloadResume } from "@/utils/ApiUtils.js";
+
 export default {
   name: "Resume",
   methods: {
     downloadResume() {
-      alert("🛠 작성 중 🛠");
+      downloadResume();
     },
   },
 };
