@@ -1,13 +1,13 @@
 import axios from "axios";
 
-const BASE_URL = "https://www.getgoalswith.site/api/";
+const BASE_URL = "https://taewan.page/api/";
 
 const URL_MAP = {
-    "resume": BASE_URL + "resume"
+    "resumeDownload": BASE_URL + "resume/download"
 }
 
 export function downloadResume() {
-    axios.get(URL_MAP.resume)
+    axios.get(URL_MAP.resumeDownload)
     .then(() => {})
     .catch(() => alert("ERROR"))
 }
