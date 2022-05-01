@@ -11,7 +11,7 @@ export default {
   name: "Resume",
   methods: {
     downloadResume() {
-      open("https://taewan.page/api/resume/download");
+      open("https://taewan.page/api/resume/download?" + Date.now());
     },
   },
 };
