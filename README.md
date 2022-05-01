@@ -9,3 +9,4 @@
 * [v0.1](./versions/v0.1.md)
 * [v0.2](./versions/v0.2.md)
 * [v0.3](./versions/v0.3.md)
+* [v0.4](./versions/v0.4.md)

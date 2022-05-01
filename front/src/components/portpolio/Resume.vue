@@ -7,13 +7,11 @@
 </template>
 
 <script>
-import { downloadResume } from "@/utils/ApiUtils.js";
-
 export default {
   name: "Resume",
   methods: {
     downloadResume() {
-      downloadResume();
+      open("https://taewan.page/api/resume/download");
     },
   },
 };

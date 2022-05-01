@@ -11,4 +11,4 @@ parent_route = path.dirname(path.abspath(path.dirname(__file__)))
 
 @router.get("/download", description="resume 다운로드")
 def get_resume():
-    return FileResponse(f"{parent_route}/assets/sample.png", filename="sample.png")
+    return FileResponse(f"{parent_route}/assets/resume.pdf", filename="resume.pdf")

@@ -27,4 +27,4 @@ async def read_root():
 app.include_router(resume_router, prefix="/api/resume")
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=3007)
+    uvicorn.run("main:app", host="0.0.0.0", port=3006)
