@@ -1,7 +1,6 @@
 <template>
   <v-row class="row-content-center">
-    <v-col cols="3"></v-col>
-    <v-col cols="6">
+    <v-col cols="12">
       <img
         src="../../assets/github.png"
         alt=""
@@ -33,7 +32,6 @@
         @click="goToInstagram"
       />
     </v-col>
-    <v-col cols="3"></v-col>
   </v-row>
 </template>
 

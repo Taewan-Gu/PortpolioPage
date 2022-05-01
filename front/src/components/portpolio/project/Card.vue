@@ -1,5 +1,16 @@
 <template>
-  <v-col cols="5" class="card" @click="openPage()">
+  <v-col v-if="windowWidth > 950" cols="5" class="card" @click="openPage()">
+    <div class="project-title">{{ projectTitle }}</div>
+    <div class="project-period">{{ projectPeriod }}</div>
+    <div
+      v-for="(content, idx) in projectContents"
+      :key="idx"
+      class="project-content"
+    >
+      {{ content }}
+    </div>
+  </v-col>
+  <v-col v-else cols="11" class="card" @click="openPage()">
     <div class="project-title">{{ projectTitle }}</div>
     <div class="project-period">{{ projectPeriod }}</div>
     <div
@@ -15,6 +26,11 @@
 <script>
 export default {
   name: "Card",
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
   props: {
     projectTitle: [String, Object],
     projectPeriod: [String, Object],
