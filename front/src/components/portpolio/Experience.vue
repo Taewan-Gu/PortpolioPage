@@ -22,7 +22,7 @@ export default {
       experiences: [
         {
           experienceTitle: "현대카드",
-          experiencePeriod: "2021.12 ~ 2022.05",
+          experiencePeriod: "2021.12 ~ ing",
           experienceContents: [
             "실시간 데이터 플랫폼 개발[Associate]",
             "Universe Echo 개발",

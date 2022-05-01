@@ -26,17 +26,17 @@ export default {
       projects: [
         {
           projectTitle: "인잇(InIT)",
-          projectPeriod: "2021.12 ~ 2022.05",
+          projectPeriod: "2021.12 ~ ing",
           projectContents: [
             "부트캠프 졸업자 커뮤니티[APP]",
             "백엔드 담당",
             "SpringBoot, JPA, Postgresql",
           ],
-          redirectUrl: "https://apps.apple.com/us/app/%EC%9D%B8%EC%9E%87-init/id1620744100",
+          redirectUrl: "https://apps.apple.com/kr/app/%EC%9D%B8%EC%9E%87-init/id1620744100",
         },
         {
           projectTitle: "어개인(Agaein)",
-          projectPeriod: "2021.08 ~ 2022.04",
+          projectPeriod: "2021.08 ~ ing",
           projectContents: [
             "크롤링 기반 실종동물 찾기 사이트[WEB]",
             "백엔드 담당",

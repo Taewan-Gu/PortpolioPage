@@ -1,5 +1,16 @@
 <template>
-  <v-col cols="5" class="card" @click="openPage()">
+  <v-col v-if="windowWidth > 950" cols="5" class="card" @click="openPage()">
+    <div class="experience-title">{{ experienceTitle }}</div>
+    <div class="experience-period">{{ experiencePeriod }}</div>
+    <div
+      v-for="(content, idx) in experienceContents"
+      :key="idx"
+      class="experience-content"
+    >
+      {{ content }}
+    </div>
+  </v-col>
+  <v-col v-else cols="11" class="card" @click="openPage()">
     <div class="experience-title">{{ experienceTitle }}</div>
     <div class="experience-period">{{ experiencePeriod }}</div>
     <div
@@ -15,6 +26,11 @@
 <script>
 export default {
   name: "Card",
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    };
+  },
   props: {
     experienceTitle: [String, Object],
     experiencePeriod: [String, Object],
