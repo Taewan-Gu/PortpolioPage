@@ -43,13 +43,13 @@ export default {
   box-shadow: 0px 0px 10px 5px #555555;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
   .portpolio {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 30px;
     padding: 40px 30px 20px 30px;
-    width: 450px;
+    width: auto;
     border: #222222 1px solid;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 5px #555555;

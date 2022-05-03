@@ -1,5 +1,5 @@
 <template>
-  <v-col v-if="windowWidth > 950" cols="5" class="card" @click="openPage()">
+  <v-col v-if="windowWidth > 1000" cols="5" class="card" @click="openPage()">
     <div class="experience-title">{{ experienceTitle }}</div>
     <div class="experience-period">{{ experiencePeriod }}</div>
     <div
