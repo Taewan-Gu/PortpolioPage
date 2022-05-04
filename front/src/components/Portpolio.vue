@@ -18,7 +18,7 @@ import Experience from "@/components/portpolio/Experience.vue";
 import Projects from "@/components/portpolio/Projects.vue";
 
 export default {
-  name: "HelloWorld",
+  name: "Portpolio",
   components: {
     Profile,
     Resume,
