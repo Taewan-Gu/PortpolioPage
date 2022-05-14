@@ -1,8 +1,8 @@
 <template>
-  <v-row class="row-content-center">
-    <v-col cols="3"></v-col>
-    <v-col cols="6" class="resume" @click="downloadResume">Resume</v-col>
-    <v-col cols="3"></v-col>
+  <v-row class="row-content-center resume-box">
+    <v-col cols="5" class="resume" @click="downloadResume">Resume.pdf</v-col>
+    <v-col cols="2"></v-col>
+    <v-col cols="5" class="resume" @click="showResume">Resume.html</v-col>
   </v-row>
 </template>
 
@@ -13,11 +13,18 @@ export default {
     downloadResume() {
       open("https://taewan.page/api/resume/download?" + Date.now());
     },
+    showResume() {
+      open("https://taewan.page/api/resume/html?" + Date.now());
+    },
   },
 };
 </script>
 
 <style scoped>
+.resume-box {
+  padding: 0px 30px 0px 30px;
+}
+
 .resume:hover {
   border: #222222 1px solid;
   border-radius: 10px;

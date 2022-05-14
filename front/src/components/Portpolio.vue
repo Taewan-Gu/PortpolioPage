@@ -18,7 +18,7 @@ import Experience from "@/components/portpolio/Experience.vue";
 import Projects from "@/components/portpolio/Projects.vue";
 
 export default {
-  name: "HelloWorld",
+  name: "Portpolio",
   components: {
     Profile,
     Resume,
@@ -43,10 +43,10 @@ export default {
   box-shadow: 0px 0px 10px 5px #555555;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
   .portpolio {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 30px;
     padding: 40px 30px 20px 30px;
     width: auto;
