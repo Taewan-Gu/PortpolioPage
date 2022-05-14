@@ -46,7 +46,7 @@ export default {
       open("https://codeforces.com/profile/muvissum");
     },
     goToBOJ() {
-      open("https://solved.ac/profile/fksk94");
+      open("https://www.acmicpc.net/user/fksk94");
     },
     goToLinkedIn() {
       open("https://www.linkedin.com/in/taewan-gu-a367b3228");
