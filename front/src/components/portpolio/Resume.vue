@@ -1,8 +1,8 @@
 <template>
   <v-row class="row-content-center resume-box">
-    <v-col cols="5" class="resume" @click="downloadResume">Resume.pdf</v-col>
-    <v-col cols="2"></v-col>
-    <v-col cols="5" class="resume" @click="showResume">Resume.html</v-col>
+    <v-col cols="3"></v-col>
+    <v-col cols="6" class="resume" @click="downloadResume">Resume</v-col>
+    <v-col cols="3"></v-col>
   </v-row>
 </template>
 
@@ -12,9 +12,6 @@ export default {
   methods: {
     downloadResume() {
       open("https://taewan.page/api/resume/download?" + Date.now());
-    },
-    showResume() {
-      open("https://taewan.page/api/resume/html?" + Date.now());
     },
   },
 };
